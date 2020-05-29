@@ -1,0 +1,41 @@
+.container--description {
+    border-bottom: $color-blue 5px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    height: 250px;
+    background-color: $color-white;
+}
+.abstract {
+    height: auto;
+    width: 75%;
+    border: $color-grey 2px solid;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    padding: 20px;  
+    letter-spacing: 0.1em;
+    line-height: 1.2em;
+    font-family: 'Indie Flower', cursive;
+    background-color: $color-white;
+}
+
+@media screen and (min-width:833px) {
+    .abstract {
+        width: 50%;
+        padding: 30px;
+    }
+}
+@media screen and (min-width:1920px) {
+    .container--description {
+        border-bottom: 10px solid $color-blue;
+        height: 500px;
+    }
+    
+    .abstract {
+        border: 3px $color-grey solid;
+        padding: 20px;
+        font-size: xx-large;
+    }
+}

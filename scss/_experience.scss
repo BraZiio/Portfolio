@@ -1,0 +1,116 @@
+.container--experience {
+    border-bottom: $color-blue 5px solid;
+    height: 600px;
+    background-color: $color-white;
+    font-family: 'Indie Flower', cursive;
+
+    .dadCenterLine {
+        display: flex;
+        align-items: center;
+        justify-content: center;   
+        height: 100%;
+        width: 100%;
+
+        .centerLine {
+            background-color: $color-blue;
+            height: 600px;
+            width: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+
+            .bubbleFirst, .bubbleSecond, .bubbleThird, .bubbleFourth {
+                border-radius: 50%;
+                background-color: $color-blue;
+                height: 50px;
+                width: 50px;
+
+                .cardExperience {
+
+                    &--first{
+                        margin-right: -500%;
+                        margin-left: 110%;
+                        border: $color-grey 2px solid;
+                        background-color: $color-white;
+                        height: 200%;
+                        width: 250%;
+                        text-align: center;
+                        padding: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                    }
+
+                    &--second{
+                        margin-left: -310%;
+                        border: $color-grey 2px solid;
+                        background-color: $color-white;
+                        height: 200%;
+                        width: 250%;
+                        text-align: center;
+                        padding: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                    }
+
+                    &--third{
+                        margin-right: -500%;
+                        margin-left: 110%;
+                        border: $color-grey 2px solid;
+                        background-color: $color-white;
+                        height: 200%;
+                        width: 250%;
+                        text-align: center;
+                        padding: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                    }
+
+                    &--fourth{
+                        margin-left: -310%;
+                        border: $color-grey 2px solid;
+                        background-color: $color-white;
+                        height: 200%;
+                        width: 250%;
+                        text-align: center;
+                        padding: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                    }
+
+                    &__littleExperience {
+                        color: $color-little;
+                        font-size: small;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.bubbleFirst, .bubbleThird {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.bubbleSecond, .bubbleFourth {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+@media screen and (min-width:1920px) {
+
+    .container--experience {
+        border-bottom: 10px solid $color-blue;
+    }
+
+}

@@ -1,0 +1,196 @@
+body {
+  margin: 0; }
+
+header {
+  height: 80px; }
+
+.name {
+  font-family: 'Balsamiq Sans', cursive;
+  height: 75px;
+  width: 100%;
+  margin: auto;
+  font-size: xx-large;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  border-bottom: #2F9EF4 5px solid;
+  position: fixed;
+  background-color: #2F9EF4; }
+
+@media screen and (min-width: 1920px) {
+  .header {
+    height: 155px; }
+  .name {
+    height: 150px;
+    font-size: 60px; } }
+
+.container--description {
+  border-bottom: #2F9EF4 5px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  background-color: white; }
+
+.abstract {
+  height: auto;
+  width: 75%;
+  border: #AFABAB 2px solid;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  letter-spacing: 0.1em;
+  line-height: 1.2em;
+  font-family: 'Indie Flower', cursive;
+  background-color: white; }
+
+@media screen and (min-width: 833px) {
+  .abstract {
+    width: 50%;
+    padding: 30px; } }
+
+@media screen and (min-width: 1920px) {
+  .container--description {
+    border-bottom: 10px solid #2F9EF4;
+    height: 500px; }
+  .abstract {
+    border: 3px #AFABAB solid;
+    padding: 20px;
+    font-size: xx-large; } }
+
+.container--experience {
+  border-bottom: #2F9EF4 5px solid;
+  height: 600px;
+  background-color: white;
+  font-family: 'Indie Flower', cursive; }
+  .container--experience .dadCenterLine {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%; }
+    .container--experience .dadCenterLine .centerLine {
+      background-color: #2F9EF4;
+      height: 600px;
+      width: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column; }
+      .container--experience .dadCenterLine .centerLine .bubbleFirst, .container--experience .dadCenterLine .centerLine .bubbleSecond, .container--experience .dadCenterLine .centerLine .bubbleThird, .container--experience .dadCenterLine .centerLine .bubbleFourth {
+        border-radius: 50%;
+        background-color: #2F9EF4;
+        height: 50px;
+        width: 50px; }
+        .container--experience .dadCenterLine .centerLine .bubbleFirst .cardExperience--first, .container--experience .dadCenterLine .centerLine .bubbleSecond .cardExperience--first, .container--experience .dadCenterLine .centerLine .bubbleThird .cardExperience--first, .container--experience .dadCenterLine .centerLine .bubbleFourth .cardExperience--first {
+          margin-right: -500%;
+          margin-left: 110%;
+          border: #AFABAB 2px solid;
+          background-color: white;
+          height: 200%;
+          width: 250%;
+          text-align: center;
+          padding: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap; }
+        .container--experience .dadCenterLine .centerLine .bubbleFirst .cardExperience--second, .container--experience .dadCenterLine .centerLine .bubbleSecond .cardExperience--second, .container--experience .dadCenterLine .centerLine .bubbleThird .cardExperience--second, .container--experience .dadCenterLine .centerLine .bubbleFourth .cardExperience--second {
+          margin-left: -310%;
+          border: #AFABAB 2px solid;
+          background-color: white;
+          height: 200%;
+          width: 250%;
+          text-align: center;
+          padding: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap; }
+        .container--experience .dadCenterLine .centerLine .bubbleFirst .cardExperience--third, .container--experience .dadCenterLine .centerLine .bubbleSecond .cardExperience--third, .container--experience .dadCenterLine .centerLine .bubbleThird .cardExperience--third, .container--experience .dadCenterLine .centerLine .bubbleFourth .cardExperience--third {
+          margin-right: -500%;
+          margin-left: 110%;
+          border: #AFABAB 2px solid;
+          background-color: white;
+          height: 200%;
+          width: 250%;
+          text-align: center;
+          padding: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap; }
+        .container--experience .dadCenterLine .centerLine .bubbleFirst .cardExperience--fourth, .container--experience .dadCenterLine .centerLine .bubbleSecond .cardExperience--fourth, .container--experience .dadCenterLine .centerLine .bubbleThird .cardExperience--fourth, .container--experience .dadCenterLine .centerLine .bubbleFourth .cardExperience--fourth {
+          margin-left: -310%;
+          border: #AFABAB 2px solid;
+          background-color: white;
+          height: 200%;
+          width: 250%;
+          text-align: center;
+          padding: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap; }
+        .container--experience .dadCenterLine .centerLine .bubbleFirst .cardExperience__littleExperience, .container--experience .dadCenterLine .centerLine .bubbleSecond .cardExperience__littleExperience, .container--experience .dadCenterLine .centerLine .bubbleThird .cardExperience__littleExperience, .container--experience .dadCenterLine .centerLine .bubbleFourth .cardExperience__littleExperience {
+          color: #545454;
+          font-size: small; }
+
+.bubbleFirst, .bubbleThird {
+  display: flex;
+  justify-content: right;
+  align-items: center; }
+
+.bubbleSecond, .bubbleFourth {
+  display: flex;
+  justify-content: left;
+  align-items: center; }
+
+@media screen and (min-width: 1920px) {
+  .container--experience {
+    border-bottom: 10px solid #2F9EF4; } }
+
+.container--contact {
+  background-color: black;
+  width: 100%;
+  height: 275px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  font-family: 'Indie Flower', cursive; }
+  .container--contact .contactMe {
+    font-size: xx-large;
+    margin: 0; }
+  .container--contact .uploadCv {
+    color: white;
+    background-color: #2F9EF4;
+    padding: 20px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    border: none;
+    text-decoration: none; }
+  .container--contact .copyright {
+    color: #545454;
+    font-size: small; }
+
+@media screen and (min-width: 1920px) {
+  .container--contact {
+    height: 425px; }
+  .contactMe {
+    font-size: 40px; }
+  .adress {
+    font-size: 30px; }
+  .uploadCv {
+    height: 50px;
+    width: 175px;
+    font-size: x-large; }
+  .copyright {
+    font-size: large; } }

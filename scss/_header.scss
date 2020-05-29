@@ -1,0 +1,29 @@
+header {
+    height: 80px;
+}
+.name {
+    font-family: 'Balsamiq Sans', cursive;
+    height: 75px;
+    width: 100%;
+    margin: auto;
+    font-size: xx-large;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: $color-white;
+    border-bottom: $color-blue 5px solid;
+    position: fixed;
+    background-color: $color-blue;
+}
+@media screen and (min-width:1920px) {
+    .header {
+        height:155px;
+    }
+
+    .name {
+        height: 150px;
+        font-size: 60px;
+    }
+}

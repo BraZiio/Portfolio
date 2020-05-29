@@ -1,0 +1,94 @@
+.container--experience {
+    border-bottom: $color-blue 5px solid;
+    height: 300px;
+    background-color: $color-white;
+
+    #decrease {
+        background-color: $color-blue;
+        color: $color-blue;
+        padding: 25px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #cardSkills {
+        display: none;
+        height: 100%;
+        width: 85%;
+        position: relative;
+        margin-top: 5%;
+        margin-left: 9.5%;
+
+
+        .html {
+            max-width: 50px;
+            max-height: 50px;
+            position: absolute;
+            margin-top: 2%;
+            margin-left: 5%;
+        }
+        .css {
+            max-width: 50px;
+            max-height: 50px;
+            position: absolute;
+            margin-top: 2%;
+            margin-left: 5%;
+        }
+        .js {
+            max-width: 50px;
+            max-height: 50px;
+            position: absolute;
+            margin-top: 2%;
+            margin-left: 5%;
+        }
+        .scss {
+            max-width: 50px;
+            max-height: 50px;
+            position: absolute;
+            margin-top: 2%;
+            margin-left: 5%;
+        }
+        .php {
+            max-width: 50px;
+            max-height: 50px;
+            position: absolute;
+            margin-top: 2%;
+            margin-left: 5%;
+        }
+        .python {
+            max-width: 50px;
+            max-height: 50px;
+            position: absolute;
+            margin-top: 2%;
+            margin-left: 5%;
+        }
+        .sql {
+            max-width: 50px;
+            max-height: 50px;
+            position: absolute;
+            margin-top: 2%;
+            margin-left: 5%;
+        }
+        .linux {
+            max-width: 50px;
+            max-height: 50px;
+            position: absolute;
+            margin-top: 2%;
+            margin-left: 5%;
+        }
+        .bootstrap {
+            max-width: 50px;
+            max-height: 50px;
+            position: absolute;
+            margin-top: 2%;
+            margin-left: 5%;
+        }
+        .wordpress {
+            max-width: 50px;
+            max-height: 50px;
+            position: absolute;
+            margin-top: 2%;
+            margin-left: 5%;
+        }
+    }
+}
