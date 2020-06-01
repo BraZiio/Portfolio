@@ -2,9 +2,12 @@ body {
   margin: 0; }
 
 header {
-  height: 80px; }
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
-.name {
+.myName {
   font-family: 'Balsamiq Sans', cursive;
   height: 75px;
   width: 100%;
@@ -14,25 +17,53 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
+  text-decoration: none !important;
   color: white;
-  border-bottom: #2F9EF4 5px solid;
   position: fixed;
-  background-color: #2F9EF4; }
+  background-color: #2F9EF4;
+  z-index: 9; }
+
+.myName:hover {
+  color: white; }
+
+.buttonColor {
+  background-color: #2F9EF4;
+  padding: 10px;
+  border-radius: 50%;
+  border: white 3px solid;
+  text-decoration: none;
+  position: fixed;
+  z-index: 10;
+  margin-left: 15px;
+  margin-top: 24px; }
+
+@media screen and (min-width: 1366px) {
+  .header {
+    height: 105px; }
+  .myName {
+    height: 100px; }
+  .buttonColor {
+    margin-top: 28px;
+    padding: 15px; } }
 
 @media screen and (min-width: 1920px) {
   .header {
-    height: 155px; }
-  .name {
-    height: 150px;
-    font-size: 60px; } }
+    height: 115px; }
+  .myName {
+    height: 110px;
+    font-size: 50px;
+    text-decoration: none; }
+  .buttonColor {
+    padding: 20px;
+    margin-top: 30px;
+    border: 4px solid white; } }
 
 .container--description {
   border-bottom: #2F9EF4 5px solid;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 250px;
+  height: 400px;
   background-color: white; }
 
 .abstract {
@@ -49,19 +80,26 @@ header {
   font-family: 'Indie Flower', cursive;
   background-color: white; }
 
+@media screen and (min-width: 375px) {
+  .container--description {
+    height: 340px; } }
+
 @media screen and (min-width: 833px) {
   .abstract {
     width: 50%;
     padding: 30px; } }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1024px) {
+  .container--description .abstract {
+    font-size: large; } }
+
+@media screen and (min-width: 1720px) {
   .container--description {
-    border-bottom: 10px solid #2F9EF4;
     height: 500px; }
-  .abstract {
-    border: 3px #AFABAB solid;
-    padding: 20px;
-    font-size: xx-large; } }
+    .container--description .abstract {
+      border: 3px #AFABAB solid;
+      padding: 20px;
+      font-size: x-large; } }
 
 .container--experience {
   border-bottom: #2F9EF4 5px solid;
@@ -92,7 +130,7 @@ header {
           margin-left: 110%;
           border: #AFABAB 2px solid;
           background-color: white;
-          height: 200%;
+          height: 250%;
           width: 250%;
           text-align: center;
           padding: 10px;
@@ -101,10 +139,10 @@ header {
           justify-content: center;
           flex-wrap: wrap; }
         .container--experience .dadCenterLine .centerLine .bubbleFirst .cardExperience--second, .container--experience .dadCenterLine .centerLine .bubbleSecond .cardExperience--second, .container--experience .dadCenterLine .centerLine .bubbleThird .cardExperience--second, .container--experience .dadCenterLine .centerLine .bubbleFourth .cardExperience--second {
-          margin-left: -310%;
+          margin-left: -290%;
           border: #AFABAB 2px solid;
           background-color: white;
-          height: 200%;
+          height: 250%;
           width: 250%;
           text-align: center;
           padding: 10px;
@@ -117,7 +155,7 @@ header {
           margin-left: 110%;
           border: #AFABAB 2px solid;
           background-color: white;
-          height: 200%;
+          height: 250%;
           width: 250%;
           text-align: center;
           padding: 10px;
@@ -126,10 +164,10 @@ header {
           justify-content: center;
           flex-wrap: wrap; }
         .container--experience .dadCenterLine .centerLine .bubbleFirst .cardExperience--fourth, .container--experience .dadCenterLine .centerLine .bubbleSecond .cardExperience--fourth, .container--experience .dadCenterLine .centerLine .bubbleThird .cardExperience--fourth, .container--experience .dadCenterLine .centerLine .bubbleFourth .cardExperience--fourth {
-          margin-left: -310%;
+          margin-left: -290%;
           border: #AFABAB 2px solid;
           background-color: white;
-          height: 200%;
+          height: auto;
           width: 250%;
           text-align: center;
           padding: 10px;
@@ -139,7 +177,7 @@ header {
           flex-wrap: wrap; }
         .container--experience .dadCenterLine .centerLine .bubbleFirst .cardExperience__littleExperience, .container--experience .dadCenterLine .centerLine .bubbleSecond .cardExperience__littleExperience, .container--experience .dadCenterLine .centerLine .bubbleThird .cardExperience__littleExperience, .container--experience .dadCenterLine .centerLine .bubbleFourth .cardExperience__littleExperience {
           color: #545454;
-          font-size: small; }
+          font-size: x-small; }
 
 .bubbleFirst, .bubbleThird {
   display: flex;
@@ -151,9 +189,196 @@ header {
   justify-content: left;
   align-items: center; }
 
+@media screen and (min-width: 375px) {
+  .container--experience .dadCenterLine .centerLine .bubbleFirst .cardExperience--first, .container--experience .dadCenterLine .centerLine .bubbleSecond .cardExperience--first, .container--experience .dadCenterLine .centerLine .bubbleThird .cardExperience--first, .container--experience .dadCenterLine .centerLine .bubbleFourth .cardExperience--first {
+    width: 260%; }
+  .container--experience .dadCenterLine .centerLine .bubbleFirst .cardExperience--second, .container--experience .dadCenterLine .centerLine .bubbleSecond .cardExperience--second, .container--experience .dadCenterLine .centerLine .bubbleThird .cardExperience--second, .container--experience .dadCenterLine .centerLine .bubbleFourth .cardExperience--second {
+    width: 260%; }
+  .container--experience .dadCenterLine .centerLine .bubbleFirst .cardExperience--third, .container--experience .dadCenterLine .centerLine .bubbleSecond .cardExperience--third, .container--experience .dadCenterLine .centerLine .bubbleThird .cardExperience--third, .container--experience .dadCenterLine .centerLine .bubbleFourth .cardExperience--third {
+    width: 260%; }
+  .container--experience .dadCenterLine .centerLine .bubbleFirst .cardExperience--fourth, .container--experience .dadCenterLine .centerLine .bubbleSecond .cardExperience--fourth, .container--experience .dadCenterLine .centerLine .bubbleThird .cardExperience--fourth, .container--experience .dadCenterLine .centerLine .bubbleFourth .cardExperience--fourth {
+    height: auto;
+    width: 260%; } }
+
+@media screen and (min-width: 1000px) {
+  .container--experience .dadCenterLine .centerLine .bubbleFirst .cardExperience--first, .container--experience .dadCenterLine .centerLine .bubbleSecond .cardExperience--first, .container--experience .dadCenterLine .centerLine .bubbleThird .cardExperience--first, .container--experience .dadCenterLine .centerLine .bubbleFourth .cardExperience--first {
+    height: 200%;
+    width: 700%;
+    display: flex;
+    flex-direction: column;
+    margin-right: -700%;
+    font-size: large; }
+  .container--experience .dadCenterLine .centerLine .bubbleFirst .cardExperience--second, .container--experience .dadCenterLine .centerLine .bubbleSecond .cardExperience--second, .container--experience .dadCenterLine .centerLine .bubbleThird .cardExperience--second, .container--experience .dadCenterLine .centerLine .bubbleFourth .cardExperience--second {
+    height: 200%;
+    width: 650%;
+    margin-left: -660%;
+    display: flex;
+    flex-direction: column;
+    font-size: large; }
+  .container--experience .dadCenterLine .centerLine .bubbleFirst .cardExperience--third, .container--experience .dadCenterLine .centerLine .bubbleSecond .cardExperience--third, .container--experience .dadCenterLine .centerLine .bubbleThird .cardExperience--third, .container--experience .dadCenterLine .centerLine .bubbleFourth .cardExperience--third {
+    height: 200%;
+    width: 700%;
+    display: flex;
+    flex-direction: column;
+    margin-right: -700%;
+    font-size: large; }
+  .container--experience .dadCenterLine .centerLine .bubbleFirst .cardExperience--fourth, .container--experience .dadCenterLine .centerLine .bubbleSecond .cardExperience--fourth, .container--experience .dadCenterLine .centerLine .bubbleThird .cardExperience--fourth, .container--experience .dadCenterLine .centerLine .bubbleFourth .cardExperience--fourth {
+    height: auto;
+    width: 650%;
+    margin-left: -660%;
+    display: flex;
+    flex-direction: column;
+    font-size: large; }
+  .container--experience .dadCenterLine .centerLine .bubbleFirst .cardExperience__littleExperience, .container--experience .dadCenterLine .centerLine .bubbleSecond .cardExperience__littleExperience, .container--experience .dadCenterLine .centerLine .bubbleThird .cardExperience__littleExperience, .container--experience .dadCenterLine .centerLine .bubbleFourth .cardExperience__littleExperience {
+    font-size: small; } }
+
 @media screen and (min-width: 1920px) {
-  .container--experience {
-    border-bottom: 10px solid #2F9EF4; } }
+  .container--experience .dadCenterLine .centerLine .bubbleFirst .cardExperience--first, .container--experience .dadCenterLine .centerLine .bubbleSecond .cardExperience--first, .container--experience .dadCenterLine .centerLine .bubbleThird .cardExperience--first, .container--experience .dadCenterLine .centerLine .bubbleFourth .cardExperience--first {
+    font-size: 23px; }
+  .container--experience .dadCenterLine .centerLine .bubbleFirst .cardExperience--second, .container--experience .dadCenterLine .centerLine .bubbleSecond .cardExperience--second, .container--experience .dadCenterLine .centerLine .bubbleThird .cardExperience--second, .container--experience .dadCenterLine .centerLine .bubbleFourth .cardExperience--second {
+    font-size: 23px; }
+  .container--experience .dadCenterLine .centerLine .bubbleFirst .cardExperience--third, .container--experience .dadCenterLine .centerLine .bubbleSecond .cardExperience--third, .container--experience .dadCenterLine .centerLine .bubbleThird .cardExperience--third, .container--experience .dadCenterLine .centerLine .bubbleFourth .cardExperience--third {
+    font-size: 23px; }
+  .container--experience .dadCenterLine .centerLine .bubbleFirst .cardExperience--fourth, .container--experience .dadCenterLine .centerLine .bubbleSecond .cardExperience--fourth, .container--experience .dadCenterLine .centerLine .bubbleThird .cardExperience--fourth, .container--experience .dadCenterLine .centerLine .bubbleFourth .cardExperience--fourth {
+    font-size: 23px;
+    height: auto; }
+  .container--experience .dadCenterLine .centerLine .bubbleFirst .cardExperience__littleExperience, .container--experience .dadCenterLine .centerLine .bubbleSecond .cardExperience__littleExperience, .container--experience .dadCenterLine .centerLine .bubbleThird .cardExperience__littleExperience, .container--experience .dadCenterLine .centerLine .bubbleFourth .cardExperience__littleExperience {
+    font-size: medium; } }
+
+.container--skills {
+  border-bottom: #2F9EF4 5px solid;
+  height: 150px;
+  background-color: white;
+  display: flex;
+  justify-content: center; }
+
+.decrease {
+  background-color: #2F9EF4;
+  color: white;
+  padding: 20px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  border: none;
+  text-decoration: none;
+  position: absolute;
+  margin-top: 20px; }
+
+.cardSkills {
+  height: auto;
+  width: 100%;
+  display: none;
+  z-index: 1;
+  margin-top: 170px; }
+
+.html {
+  max-width: auto;
+  max-height: 100px;
+  transition: all 1s ease;
+  filter: grayscale(100%);
+  margin-bottom: 50px; }
+
+.html:hover {
+  transform: scale(1.25);
+  filter: grayscale(0%); }
+
+.css {
+  max-width: auto;
+  max-height: 100px;
+  transition: all 1s ease;
+  filter: grayscale(100%);
+  margin-bottom: 50px; }
+
+.css:hover {
+  transform: scale(1.25);
+  filter: grayscale(0%); }
+
+.js {
+  max-width: auto;
+  max-height: 100px;
+  transition: all 1s ease;
+  filter: grayscale(100%);
+  margin-bottom: 50px; }
+
+.js:hover {
+  transform: scale(1.25);
+  filter: grayscale(0%); }
+
+.scss {
+  max-width: auto;
+  max-height: 100px;
+  transition: all 1s ease;
+  filter: grayscale(100%);
+  margin-bottom: 50px; }
+
+.scss:hover {
+  transform: scale(1.25);
+  filter: grayscale(0%); }
+
+.php {
+  max-width: auto;
+  max-height: 100px;
+  transition: all 1s ease;
+  filter: grayscale(100%);
+  margin-bottom: 50px; }
+
+.php:hover {
+  transform: scale(1.25);
+  filter: grayscale(0%); }
+
+.python {
+  max-width: auto;
+  max-height: 50px;
+  transition: all 1s ease;
+  filter: grayscale(100%);
+  margin-bottom: 50px; }
+
+.python:hover {
+  transform: scale(1.25);
+  filter: grayscale(0%); }
+
+.sql {
+  max-width: auto;
+  max-height: 100px;
+  transition: all 1s ease;
+  filter: grayscale(100%); }
+
+.sql:hover {
+  transform: scale(1.25);
+  filter: grayscale(0%); }
+
+.linux {
+  max-width: auto;
+  max-height: 50px;
+  transition: all 1s ease;
+  filter: grayscale(100%);
+  margin-bottom: 50px; }
+
+.linux:hover {
+  transform: scale(1.25);
+  filter: grayscale(0%); }
+
+.bootstrap {
+  max-width: auto;
+  max-height: 100px;
+  transition: all 1s ease;
+  filter: grayscale(100%);
+  margin-bottom: 50px; }
+
+.bootstrap:hover {
+  transform: scale(1.25);
+  filter: grayscale(0%); }
+
+.wordpress {
+  max-width: auto;
+  max-height: 100px;
+  transition: all 1s ease;
+  filter: grayscale(100%);
+  margin-bottom: 50px; }
+
+.wordpress:hover {
+  transform: scale(1.25);
+  filter: grayscale(0%); }
 
 .container--contact {
   background-color: black;
@@ -183,14 +408,13 @@ header {
 
 @media screen and (min-width: 1920px) {
   .container--contact {
-    height: 425px; }
+    height: 375px; }
   .contactMe {
     font-size: 40px; }
   .adress {
     font-size: 30px; }
   .uploadCv {
-    height: 50px;
-    width: 175px;
+    padding: 25px;
     font-size: x-large; }
   .copyright {
     font-size: large; } }
