@@ -134,3 +134,14 @@
         transform:scale(1.25);
         filter: grayscale(0%);
     }
+    .react {
+        max-width: auto;
+        max-height: 100px;
+        transition: all 1s ease;
+        filter: grayscale(100%);
+        margin-bottom: 50px;
+    }
+    .react:hover {
+        transform:scale(1.25);
+        filter: grayscale(0%);
+    }
